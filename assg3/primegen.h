@@ -1,0 +1,34 @@
+#ifndef PRIME_GEN_H
+#define PRIME_GEN_H
+#include <string>
+#include <vector>
+#include <utility>
+#include "bignum.h"
+std::vector<int> smallprime = {
+    2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,
+    59,61,67,71,73,79,83,89,97,101,103,107,109,
+    113,127,131,137,139,149,151,157,163,167,173,
+    179,181,191,193,197,199,211,223,227,229,233,
+    239,241,251,257,263,269,271,277,281,283,293,
+    307,311,313,317,331,337,347,349,353,359,367,
+    373,379,383,389,397,401,409,419,421,431,433,
+    439,443,449,457,461,463,467,479,487,491,499,
+    503,509,521,523,541,547,557,563,569,571,577,
+    587,593,599,601,607,613,617,619,631,641,643,
+    647,653,659,661,673,677,683,691,701,709,719,
+    727,733,739,743,751,757,761,769,773,787,797,
+    809,811,821,823,827,829,839,853,857,859,863,
+    877,881,883,887,907,911,919,929,937,941,947,
+    953,967,971,977,983,991,997
+};
+//the possible values for the hex string
+std::string values = "0123456789abcdef";
+//primes that I generated and was tested
+std::string prime1 = "e42313de07f4cdca2e19d9ac7059f674c7e11979121e5a22b285152e2e0c0a8b";
+std::string prime2 = "645675ab99e6826573a0e29c0dbf8b756573958add6e7a88eb89dd6f69dd905d";
+std::string prime3 = "aba9cfc2e74626ec764473212255c76b256b36a9cd8f4a2caf4cc19b91259b9f";
+std::string prime4 = "99c15f0cc19b46a084830e649b11b9da71f30dcac72aa46f61eaac0787ae684f";
+int findK(BigNum);
+std::vector<std::string> genbignumstr();
+BigNum genBigPrime();
+#endif

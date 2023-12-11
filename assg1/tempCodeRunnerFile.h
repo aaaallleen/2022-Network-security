@@ -1,0 +1,1 @@
+        BigNum operator=(BigNum);
